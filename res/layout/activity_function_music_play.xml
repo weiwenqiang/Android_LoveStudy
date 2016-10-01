@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutBaseTheme" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/layout_title" />
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/icon_music_bg"
+        android:drawSelectorOnTop="false"
+        android:listSelector="@color/red" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/txt_nodata"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/nohas_resources"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <SeekBar
+            android:id="@+id/seekbar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/length_5"
+            android:layout_marginRight="@dimen/length_5"
+            android:layout_weight="1" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="@dimen/length_5"
+            android:layout_marginTop="@dimen/length_5" >
+
+            <Button
+                android:id="@+id/next"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/length_45"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="@dimen/length_5"
+                android:background="@drawable/white_btn_selector"
+                android:paddingLeft="@dimen/length_10"
+                android:paddingRight="@dimen/length_10"
+                android:text="下一曲" />
+
+            <Button
+                android:id="@+id/front"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/length_45"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/length_5"
+                android:background="@drawable/white_btn_selector"
+                android:paddingLeft="@dimen/length_10"
+                android:paddingRight="@dimen/length_10"
+                android:text="上一曲" />
+
+            <Button
+                android:id="@+id/play"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/length_45"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/length_5"
+                android:layout_toRightOf="@+id/front"
+                android:background="@drawable/white_btn_selector"
+                android:paddingLeft="@dimen/length_10"
+                android:paddingRight="@dimen/length_10"
+                android:text="播放" />
+
+            <Button
+                android:id="@+id/stop"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/length_45"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="@dimen/length_5"
+                android:layout_toLeftOf="@+id/next"
+                android:background="@drawable/white_btn_selector"
+                android:paddingLeft="@dimen/length_10"
+                android:paddingRight="@dimen/length_10"
+                android:text="停止" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LayoutBaseTheme" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/layout_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/open"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/length_45"
+                android:layout_marginLeft="@dimen/length_5"
+                android:layout_marginRight="@dimen/length_5"
+                android:layout_marginTop="@dimen/length_5"
+                android:background="@drawable/red_btn_selector"
+                android:gravity="center"
+                android:text="@string/open"
+                android:textColor="@color/white" />
+
+            <com.example.lovestudy.base.BaseImageView
+                android:id="@+id/imageview1"
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                tools:ignore="ContentDescription" />
+
+            <com.example.lovestudy.base.BaseImageView
+                android:id="@+id/imageview2"
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                tools:ignore="ContentDescription" />
+
+            <com.example.lovestudy.base.BaseImageView
+                android:id="@+id/imageview3"
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                tools:ignore="ContentDescription" />
+
+            <com.example.lovestudy.base.BaseImageView
+                android:id="@+id/imageview4"
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                tools:ignore="ContentDescription" />
+
+            <com.example.lovestudy.base.BaseImageView
+                android:id="@+id/imageview5"
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

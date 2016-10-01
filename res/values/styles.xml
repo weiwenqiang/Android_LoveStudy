@@ -1,0 +1,94 @@
+<resources>
+
+    <style name="AppBaseTheme" parent="@android:style/Theme.Light.NoTitleBar"></style>
+
+    <!-- 窗体透明 主题 -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <!-- 窗体自定义主题 -->
+    <style name="NoTransparentTheme" parent="AppBaseTheme">
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowBackground">@color/F1F1F1</item>
+    </style>
+
+    <!-- Activity布局主题 -->
+    <style name="LayoutBaseTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@color/white</item>
+        <!-- 符合系统窗口 （解决状态栏与自定义title的重叠问题） -->
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+
+    <!-- 标题主题 -->
+    <style name="TitleTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/StatusBarColor</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/length_10</item>
+        <item name="android:textSize">@dimen/length_18</item>
+        <item name="android:textColor">@color/title_txt_color</item>
+    </style>
+
+    <!-- ListView子项主题 -->
+    <style name="BaseListItemTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/length_60</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/item_selector_pressed_false_f0f0f0_true_ffffff</item>
+    </style>
+
+    <!-- 由下至上弹出并位于屏幕底部的提示框 -->
+    <style name="dialog_show_anim" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/dialog_enter</item>
+        <item name="@android:windowExitAnimation">@anim/dialog_exit</item>
+    </style>
+
+    <!-- 红色按钮样式 -->
+    <style name="red_btn_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/length_40</item>
+        <item name="android:textColor">@drawable/red_txt_selector</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/length_16</item>
+        <item name="android:paddingTop">@dimen/length_3</item>
+        <item name="android:paddingBottom">@dimen/length_3</item>
+        <item name="android:paddingLeft">@dimen/length_6</item>
+        <item name="android:paddingRight">@dimen/length_6</item>
+        <item name="android:background">@drawable/red_btn_selector</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <!-- 白色按钮样式 -->
+    <style name="white_btn_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/length_40</item>
+        <item name="android:textColor">@drawable/white_txt_selector</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/length_16</item>
+        <item name="android:paddingTop">@dimen/length_3</item>
+        <item name="android:paddingBottom">@dimen/length_3</item>
+        <item name="android:paddingLeft">@dimen/length_6</item>
+        <item name="android:paddingRight">@dimen/length_6</item>
+        <item name="android:background">@drawable/white_btn_selector</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <!-- 新闪屏主题样式 -->
+    <style name="SplashTheme" parent="AppBaseTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+</resources>

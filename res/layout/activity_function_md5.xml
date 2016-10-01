@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutBaseTheme" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/layout_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/length_50"
+        android:layout_marginLeft="@dimen/length_10"
+        android:layout_marginRight="@dimen/length_10"
+        android:layout_marginTop="@dimen/length_20"
+        android:background="@drawable/white_button_selector_stroke_1px"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/edittext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="录入需要加密的内容"
+            android:paddingLeft="@dimen/length_5" />
+    </LinearLayout>
+
+     <TextView
+        android:id="@+id/txtSave"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/length_50"
+        android:layout_marginLeft="@dimen/length_10"
+        android:layout_marginRight="@dimen/length_10"
+        android:layout_marginTop="@dimen/length_30"
+        android:background="@drawable/red_btn_selector"
+        android:enabled="false"
+        android:gravity="center"
+        android:padding="@dimen/length_5"
+        android:text="@string/save"
+        android:textColor="@color/white" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/length_100"
+        android:layout_marginLeft="@dimen/length_10"
+        android:layout_marginRight="@dimen/length_10"
+        android:layout_marginTop="@dimen/length_30"
+        android:background="@drawable/white_button_selector_stroke_1px"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txtGet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/length_5"
+            android:text="加密之后的内容展示区！"
+            android:textColor="@color/blue" />
+    </LinearLayout>
+
+</LinearLayout>

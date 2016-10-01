@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutBaseTheme" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/layout_title" />
+
+    <com.example.lovestudy.view.WordView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/length_5"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/txt_current_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/length_10"
+            android:layout_marginRight="@dimen/length_5"
+            android:gravity="center"
+            android:padding="@dimen/length_2"
+            android:text="00:00"
+            android:textColor="@color/gray_dark" />
+
+        <SeekBar
+            android:id="@+id/seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/txt_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/length_5"
+            android:layout_marginRight="@dimen/length_10"
+            android:gravity="center"
+            android:padding="@dimen/length_2"
+            android:text="00:00"
+            android:textColor="@color/gray_dark" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/length_5"
+        android:layout_marginTop="@dimen/length_5"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/txt_service_start"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/length_40"
+            android:layout_marginLeft="@dimen/length_10"
+            android:layout_marginRight="@dimen/length_5"
+            android:layout_weight="1"
+            android:background="@drawable/red_btn_selector"
+            android:gravity="center"
+            android:text="播放"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/txt_service_stop"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/length_40"
+            android:layout_marginLeft="@dimen/length_5"
+            android:layout_marginRight="@dimen/length_10"
+            android:layout_weight="1"
+            android:background="@drawable/red_btn_selector"
+            android:gravity="center"
+            android:text="停止"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

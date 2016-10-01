@@ -1,0 +1,185 @@
+﻿{
+    "Result": 0,
+    "Message": "成功",
+    "Data": [
+        {
+            "Title": "一：sqlite3存储数据的类型",
+	    "Content": [
+			{
+				"Name":"1，NULL：标识一个NULL值",
+				"Description":""
+			},
+			{
+				"Name":"2，INTERGER：整数类型",
+				"Description":""
+			},
+			{
+				"Name":"3，REAL：浮点数",
+				"Description":""
+			},
+			{
+				"Name":"4，TEXT：字符串",
+				"Description":""
+			},
+			{
+				"Name":"5，BLOB：二进制数",
+				"Description":""
+			}
+			] 
+            
+        },
+	{
+            "Title": "二：sqlite3存储数据的约束条件",
+	    "Content": [
+			{
+				"Name":"1，PRIMARY KEY - 主键",
+				"Description":"1）主键的值必须唯一，用于标识每一条记录，如学生的学号
+		2）主键同时也是一个索引，通过主键查找记录速度较快
+		3）主键如果是整数类型，该列的值可以自动增长"
+			},
+			{
+				"Name":"2，NOT NULL - 非空",
+				"Description":"约束列记录不能为空，否则报错"
+			},
+			{
+				"Name":"3，UNIQUE - 唯一",
+				"Description":"除主键外，约束其他列的数据的值唯一"
+			},
+			{
+				"Name":"4，CHECK - 条件检查",
+				"Description":"约束该列的值必须符合条件才可存入"
+			},
+			{
+				"Name":"5，DEFAULT - 默认值",
+				"Description":"列数据中的值基本都是一样的，这样的字段列可设为默认值"
+			}
+			] 
+            
+        },
+	{
+            "Title": "三：建立数据表",
+	    "Content": [
+			{
+				"Name":"语法：create table table_name(field1 type1, field2 type1, ...);",
+				"Description":"table_name是要创建数据表名称，fieldx是数据表内字段名称，typex则是字段类型。"
+			},
+			{
+				"Name":"例1，建立一个简单的学生信息表，它包含学号与姓名等学生信息:",
+				"Description":"create table student_info(stu_no interger primary key, name text);"
+			}
+			] 
+            
+        },
+	{
+            "Title": "四：添加数据记录",
+	    "Content": [
+			{
+				"Name":"语法：insert into table_name(field1, field2, ...) values(val1, val2, ...);",
+				"Description":"valx为需要存入字段的值。"
+			},
+			{
+				"Name":"例1，往学生信息表添加数据：",
+				"Description":"Insert into student_info(stu_no, name) values(0001, alex);"
+			}
+			] 
+            
+        },
+	{
+            "Title": "五：修改数据记录",
+	    "Content": [
+			{
+				"Name":"语法：update table_name set field1=val1, field2=val2 where expression;",
+				"Description":"where是sql语句中用于条件判断的命令，expression为判断表达式"
+			},
+			{
+				"Name":"例1，修改学生信息表学号为0001的数据记录：",
+				"Description":"update student_info set stu_no=0001, name=hence where stu_no=0001;"
+			}
+			] 
+            
+        },
+	{
+            "Title": "六：删除数据记录",
+	    "Content": [
+			{
+				"Name":"语法：delete from table_name [where expression];",
+				"Description":"不加判断条件则清空表所有数据记录。"
+			},
+			{
+				"Name":"例1，删除学生信息表学号为0001的数据记录：",
+				"Description":"delete from student_info where stu_no=0001;"
+			}
+			] 
+            
+        },
+	{
+            "Title": "七：查询数据记录",
+	    "Content": [
+			{
+				"Name":"select指令基本格式:",
+				"Description":"select columns from table_name [where expression];"
+			},
+			{
+				"Name":"a，查询输出所有数据记录",
+				"Description":"select * from table_name;"
+			},
+			{
+				"Name":"b，限制输出数据记录数量",
+				"Description":"select * from table_name limit val;"
+			},
+			{
+				"Name":"c，升序输出数据记录",
+				"Description":"select * from table_name order by field asc;"
+			},
+			{
+				"Name":"d，降序输出数据记录",
+				"Description":"select * from table_name order by field desc;"
+			},
+			{
+				"Name":"e，条件查询",
+				"Description":"@1，select * from table_name where expression;
+		@2，select * from table_name where field in ('val1', 'val2', 'val3');
+		@3，select * from table_name where field between val1 and val2;"
+			},
+			{
+				"Name":"f，查询记录数目",
+				"Description":"select count (*) from table_name;"
+			},
+			{
+				"Name":"g，区分列数据",
+				"Description":"select distinct field from table_name;"
+			}
+			] 
+            
+        },
+	{
+            "Title": "八：建立索引",
+	    "Content": [
+			{
+				"Name":"当说数据表存在大量记录，索引有助于加快查找数据表速度。",
+				"Description":"create index index_name on table_name(field);"
+			},
+			{
+				"Name":"例1，针对学生表stu_no字段，建立一个索引：",
+				"Description":"create index student_index on student_table(stu_no);"
+			}
+			] 
+            
+        },
+	{
+            "Title": "九：删除数据表或索引",
+	    "Content": [
+			{
+				"Name":"1，删除数据表",
+				"Description":"drop table table_name;"
+			},
+			{
+				"Name":"2，删除索引",
+				"Description":"drop index index_name;"
+			}
+			] 
+            
+        }
+
+    ]
+}

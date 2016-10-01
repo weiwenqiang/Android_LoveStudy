@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutBaseTheme" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/layout_title" />
+
+    <Button
+        android:id="@+id/button_system_notify_message"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/item_selector_pressed_false_f0f0f0_true_ffffff"
+        android:gravity="center"
+        android:text="系统默认通知" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/length_1"
+        android:background="@color/DBD6D6" />
+
+    <Button
+        android:id="@+id/button_custom_notify_message"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/item_selector_pressed_false_f0f0f0_true_ffffff"
+        android:gravity="center"
+        android:text="自定义通知" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/length_1"
+        android:background="@color/DBD6D6" />
+
+    <Button
+        android:id="@+id/button_largeView_notify_message"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/item_selector_pressed_false_f0f0f0_true_ffffff"
+        android:gravity="center"
+        android:text="大视图通知" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/length_1"
+        android:background="@color/DBD6D6" />
+
+    <Button
+        android:id="@+id/button_largeImg_notify_message"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/item_selector_pressed_false_f0f0f0_true_ffffff"
+        android:gravity="center"
+        android:text="大图片通知" />
+
+</LinearLayout>

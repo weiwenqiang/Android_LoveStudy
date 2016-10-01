@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutBaseTheme" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/layout_title" />
+
+    <Button
+        android:id="@+id/clock"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/length_40"
+        android:layout_marginLeft="@dimen/length_3"
+        android:layout_marginRight="@dimen/length_3"
+        android:layout_marginTop="@dimen/length_5"
+        android:background="@drawable/red_btn_selector"
+        android:gravity="center"
+        android:padding="@dimen/length_3"
+        android:text="设置一次性闹钟"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/repeating_clock"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/length_40"
+        android:layout_marginLeft="@dimen/length_3"
+        android:layout_marginRight="@dimen/length_3"
+        android:layout_marginTop="@dimen/length_5"
+        android:background="@drawable/red_btn_selector"
+        android:gravity="center"
+        android:padding="@dimen/length_3"
+        android:text="设置重复闹钟"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/cancel_clock"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/length_40"
+        android:layout_marginLeft="@dimen/length_3"
+        android:layout_marginRight="@dimen/length_3"
+        android:layout_marginTop="@dimen/length_5"
+        android:background="@drawable/red_btn_selector"
+        android:gravity="center"
+        android:padding="@dimen/length_3"
+        android:text="取消闹钟"
+        android:textColor="@color/white" />
+
+</LinearLayout>

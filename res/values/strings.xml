@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">爱学习</string>
+    
+    <string name="v1_text_view">视图</string>
+    
+    <string name="v1_text_faction">功能</string>
+    
+    <string name="v1_text_widget">控件</string>
+    
+    <string name="v1_text_user">个人</string>
+    
+    <string name="loading">加载中...</string>
+    
+    <string name="now_state">当前状态：</string>
+    
+    <string name="on">打开</string>
+    
+    <string name="off">关闭</string>
+    
+    <string name="switch_night_mode">切换为夜间模式</string>
+    
+    <string name="switch_day_mode">切换为白天模式</string>
+    
+    <string name="view_view">View界面</string>
+    
+    <string name="function_view">Function界面</string>
+    
+    <string name="widget_view">Widget界面</string>
+    
+    <string name="user_view">User界面</string>
+    
+    <string name="horizontal_screen">横屏</string>
+    
+    <string name="vertical_screen">竖屏</string>
+    
+    <string name="full_screen">全屏</string>
+    
+    <string name="unfull_screen">非全屏</string>
+    
+    <string name="screen_width">屏幕宽度</string>
+    
+    <string name="unfull_height">屏幕高度</string>
+    
+    <string name="largeHeap">内存分配</string>
+    
+    <string name="sdcard_total_size">SD卡总大小</string>
+    
+    <string name="sdcard_avail_size">SD卡剩余大小</string>
+    
+    <string name="apk_size">APK大小</string>
+    
+    <string name="app_sign">应用签名</string>
+    
+    <string name="app_has_install">应用是否安装</string>
+    
+    <string name="open">开启</string>
+    
+    <string name="data_store_sharedPreferences">共享参数</string>
+    
+    <string name="data_store_file">文件</string>
+    
+    <string name="data_store_database">数据库</string>
+    
+    <string name="learn_document">学习文档</string>
+    
+    <string name="refresh">刷新界面</string>
+    
+    <string name="delete_hint">确定要删除吗？</string>
+    
+    <string name="sure">确定</string>
+    
+    <string name="cancel">取消</string>
+    
+    <string name="please">请慎重！！！</string>
+    
+    <string name="empty_content_hint">内容不能为空！</string>
+    
+    <string name="please_choose_need_update_item">请选择要修改的子项！</string>
+    
+    <string name="set_head_portrait">头像设置</string>
+    
+    <string name="photo_album">相册</string>
+    
+    <string name="camera">相机</string>
+    
+    <string name="share_txt">文字分享</string>
+    
+    <string name="share_img">图片分享</string>
+    
+    <string name="system_set">系统设置</string>
+    
+    <string name="image_manage">图片管理</string>
+    
+    <string name="font_set">字体设置</string>
+    
+    <string name="java_js">Java与JS交互</string>
+    
+    <string name="wifi_manage">WIFI管理</string>
+    
+    <string name="data_save">数据存储</string>
+    
+    <string name="data_share">数据分享</string>
+    
+    <string name="gif_paly">闪图播放</string>
+    
+    <string name="music_paly">音乐播放</string>
+    
+    <string name="music_paly_show_lrc">音乐播放(显示歌词)</string>
+    
+    <string name="movie_paly">视频播放</string>
+    
+    <string name="movie_paly_list">视频播放列表</string>
+    
+    <string name="notify">通知</string>
+    
+    <string name="communication">通讯</string>
+    
+    <string name="md5">MD5加密</string>
+    
+    <string name="qrcode">二维码</string>
+    
+    <string name="sweep">扫一扫</string>
+    
+    <string name="flashlight">手电筒</string>
+    
+    <string name="bright_ness">护目镜</string>
+    
+    <string name="floating_window">悬浮窗</string>
+    
+    <string name="color_picker">颜色选择器</string>
+    
+    <string name="lock_screen">锁屏</string>
+    
+    <string name="callback_function">回调函数</string>
+    
+    <string name="add_desktop_shortcut">添加桌面快捷</string>
+    
+    <string name="animation">动画</string>
+    
+    <string name="background_color_gradient">背景色渐变</string>
+    
+    <string name="alarm">闹铃</string>
+    
+    <string name="vibration_manager">震动管理</string>
+    
+    <string name="delete_desktop_shortcut">删除桌面快捷</string>
+    
+    <string name="empty_content_error">内容不能为空！</string>
+    
+    <string name="choose_img">选择图片！</string>
+    
+    <string name="asynchload_img">异步加载图片</string>
+    
+    <string name="asynchload_img_ExecutorService">异步下载--ExecutorService</string>
+    
+    <string name="asynchload_img_AsyncTask">异步下载--AsyncTask</string>
+    
+    <string name="asynchload_img_Handler">异步下载--Handler</string>
+    
+    <string name="cache_img">图片缓存</string>
+    
+    <string name="zoom_img">图片裁剪</string>
+    
+    <string name="dragDrop_img">图片放大/缩小/拖拽</string>
+    
+    <string name="circular_img">圆形图片</string>
+    
+    <string name="roundCorner_img">图角图片</string>
+    
+    <string name="cover_flow_img">封面流</string>
+    
+    <string name="Button">Button</string>
+    
+    <string name="TextView">TextView</string>
+    
+    <string name="EditText">EditText</string>
+    
+    <string name="Fragment">Fragment</string>
+    
+    <string name="ViewPager">ViewPager</string>
+    
+    <string name="ListView">ListView</string>
+    
+    <string name="GridView">GridView</string>
+    
+    <string name="Gallery">Gallery</string>
+    
+    <string name="Progress">Progress</string>
+    
+    <string name="DatePicker">DatePicker</string>
+    
+    <string name="TimePicker">TimePicker</string>
+    
+    <string name="Spinner">Spinner</string>
+    
+    <string name="view_Loading">加载视图</string>
+    
+    <string name="view_Mask">遮罩视图</string>
+    
+    <string name="view_Adview">广告视图</string>
+    
+    <string name="view_Browser">内嵌浏览器视图</string>
+    
+    <string name="view_CheckBoxListView">列表套单选框视图</string>
+    
+    <string name="view_SwitchView">开关切换视图</string>
+    
+    <string name="view_CircleProgressBar">自定义圆形进度条界面</string>
+    
+    <string name="view_CustomTextView">自定义TextView视图</string>
+    
+    <string name="view_CustomEditText">自定义EditText视图</string>
+    
+    <string name="view_ViewPageCursor">自定义ViewPage滑动线条视图</string>
+    
+    <string name="view_LineTextView">自定义下划线TextView界面</string>
+    
+    <string name="view_custom_radarscan">自定义雷达扫描界面</string>
+    
+    <string name="view_custom_drawboard">自定义画布界面</string>
+    
+    <string name="communication_get_linkman">获取手机联系人</string>
+    
+    <string name="communication_get_sms">获取手机短信</string>
+    
+    <string name="communication_send_sms">发送短信</string>
+    
+     <string name="more">更多</string>
+    
+    <string name="setting">设置</string>
+    
+    <string name="about">关于</string>
+    
+    <string name="guide">引导</string>
+    
+    <string name="help">帮助</string>
+    
+    <string name="login">登录</string>
+    
+    <string name="register">注册</string>
+    
+    <string name="username_edit_hint">手机/邮箱/个性帐号</string>
+    
+    <string name="password_edit_hint">请输入密码</string>
+    
+    <string name="forget_password">忘记密码</string>
+    
+    <string name="save">保存</string>
+    
+    <string name="progress">%1$s/255</string>
+    
+    <string name="show_floating_window">显示桌面悬浮窗</string>
+    
+    <string name="hide_floating_window">隐藏桌面悬浮窗</string>
+    
+    <string name="choose_color">选择颜色</string>
+    
+    <string name="preview">预览</string>
+    
+    <string name="start">开始</string>
+    
+    <string name="stop">停止</string>
+    
+    <string name="title1">God of War Ascension</string>
+    
+    <string name="title2">Assassin\'s Creed III</string>
+    
+    <string name="title3">Hitman Absolution</string>
+    
+    <string name="title4">Dishonored</string>
+    
+    <string name="personal_data">个人资料</string>
+    
+    <string name="nick_name">昵称</string>
+    
+    <string name="head_portrait">头像</string>
+    
+    <string name="research">研究</string>
+    
+    <string name="entertainment">"娱乐 "</string>
+    
+    <string name="dating">交友</string>
+    
+    <string name="work">工作</string>
+    
+    <string name="learn">"学习 "</string>
+    
+    <string name="life">生活</string>
+    
+    <string name="car_mask">汽车标志</string>
+    
+    <string name="china_city">中国城市</string>
+    
+    <string name="solar_terms">24节气</string>
+    
+    <string name="clothing">衣物</string>
+    
+    <string name="food">食物</string>
+    
+    <string name="live">居住</string>
+    
+    <string name="traffic">交通</string>
+    
+    <string name="broadcast">广播</string>
+    
+    <string name="service">服务</string>
+    
+    <string name="process_communication">进程间通信</string>
+    
+    <string name="new_process">新进程</string>
+    
+    <string name="change_text_color">改变文字颜色</string>
+    
+    <string name="how_to_handle_passport">怎么办理护照</string>
+    
+    <string name="save_data">保存数据</string>
+    
+    <string name="get_data">获取数据</string>
+    
+    <string name="nohas_resources">暂无资源</string>
+    
+    <string name="clear_canvas">清除画布</string>
+    
+    <string name="paint_color">画笔的颜色</string>
+    
+    <string name="paint_size">画笔的大小</string>
+    
+    <string name="animation_alpha">渐变透明度动画</string>
+    
+    <string name="animation_scale">渐变尺寸伸缩动画</string>
+    
+    <string name="animation_translate">画面转换位置移动动画</string>
+    
+    <string name="animation_rotate">画面转移旋转动画</string>
+    
+    <string name="jpush_show">极光推送展示界面</string>
+    
+    <string name="dynamic_broadcast">动态广播</string>
+     
+    <string name="static_broadcast">静态广播</string>
+    
+    <string name="life_food_one">常吃5种食物 最能预防胃癌</string>
+    
+    <string name="your_love">您的爱好</string>
+    
+    <string name="interface_callback">接口回调</string>
+    
+    <string name="data_clean_manager">应用数据清理器</string>
+    
+    <string name="interface_callback_download_data">接口回调下载数据</string>
+    
+    <string name="interface_callback_display_dialog">接口回调显示对话框</string>
+    
+    <string name="database_transaction_optimize">数据库事务优化</string>
+    
+    <string name="sqlite_grammar">SQLite语法</string>
+    
+</resources>

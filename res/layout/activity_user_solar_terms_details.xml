@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutBaseTheme" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/layout_title" />
+
+    <com.example.lovestudy.base.BaseImageView
+        android:id="@+id/img_solar_terms"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/length_150"
+        android:padding="@dimen/length_1"
+        android:scaleType="fitXY" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/length_1"
+        android:background="@drawable/white_btn_selector" >
+
+        <TextView
+            android:id="@+id/txt_introduction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:padding="@dimen/length_5" />
+    </ScrollView>
+
+</LinearLayout>

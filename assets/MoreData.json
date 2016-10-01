@@ -1,0 +1,32 @@
+﻿{
+    "Result": 0,
+    "Message": "成功",
+    "Data": [
+        {
+            "Name": "关于界面", 
+            "IsNewGroup": 1,
+            "Key": "About"
+        },
+        {
+            "Name": "帮助界面", 
+            "IsNewGroup": 0,
+            "Key": "Help"
+        },
+	{
+            "Name": "闪屏界面", 
+            "IsNewGroup": 0,
+            "Key": "Splash"
+        },
+	{
+            "Name": "切换账户", 
+            "IsNewGroup": 1,
+            "Key": "Login"
+        },
+        {
+           	"Name": "设置界面", 
+            "IsNewGroup": 1,
+            "Key": "Setting"
+        },
+        
+    ]
+}

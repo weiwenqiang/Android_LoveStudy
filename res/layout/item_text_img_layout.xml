@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white_button_selector_stroke_1px"
+    android:orientation="vertical" >
+
+    <com.example.lovestudy.base.BaseImageView
+        android:id="@+id/mImg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/length_200"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/mTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_button_selector_stroke_1px"
+        android:gravity="center|left"
+        android:padding="@dimen/length_5"
+        android:textSize="@dimen/length_16" />
+
+</LinearLayout>

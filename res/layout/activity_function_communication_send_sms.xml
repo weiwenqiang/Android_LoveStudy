@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutBaseTheme" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/layout_title" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/length_50"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="120dp"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="选择好友"
+            android:textSize="@dimen/length_18" />
+
+        <EditText
+            android:id="@+id/edit_address"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#f0f0f0"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/length_50"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="120dp"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="选择寄语"
+            android:textSize="@dimen/length_18" />
+
+        <EditText
+            android:id="@+id/edit_content"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#f0f0f0"
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/length_5" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_sent_sms"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/blue"
+        android:text="发送" />
+
+</LinearLayout>

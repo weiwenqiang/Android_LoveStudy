@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutBaseTheme" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/layout_title" />
+
+    <com.example.lovestudy.view.AdViewPageView
+        android:id="@+id/adview"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" >
+    </com.example.lovestudy.view.AdViewPageView>
+
+</LinearLayout>

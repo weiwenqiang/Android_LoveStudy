@@ -1,0 +1,27 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_enabled="false">
+        <shape android:shape="rectangle">
+            <corners android:radius="5px" />
+            <stroke android:width="1px" android:color="#a0a0a0"/>
+            <solid android:color="@color/B3B3B3"/>
+        </shape>
+    </item>
+    
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="5px" />
+            <stroke android:width="1px" android:color="#a0a0a0"/>
+            <solid android:color="@color/StatusBarColorPressed"/>
+        </shape>
+    </item>
+    
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="5px" />
+            <stroke android:width="1px" android:color="#a0a0a0"/>
+            <solid android:color="@color/StatusBarColor"/>
+        </shape>
+    </item>
+
+</selector>

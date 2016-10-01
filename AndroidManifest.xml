@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lovestudy.activity"
+    android:versionCode="2"
+    android:versionName="1.0.1" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="19" />
+
+    <!-- 访问网络的权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 允许挂载和反挂载文件系统可移动存储 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 允许程序写入外部存储，如SD卡上写文件 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 允许程序改变网络连接状态 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!-- 允许程序改变WiFi连接状态 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 允许程序访问有关GSM网络信息 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 允许程序访问WiFi网络状态信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 判断手机号运营商的权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 读取联系人权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!-- 拨打电话权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- 读取手机短信的权限 -->
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <!-- 发送短信的权限 -->
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <!-- 请求访问使用照相设备权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 允许访问振动设备 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 允许访问闪光灯 -->
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <!-- 悬浮窗权限 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- 允许一个程序获取信息有关当前或最近运行的任务，一个缩略的任务状态，是否活动等等 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!-- 获取APK包大小的权限 -->
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+    <!-- 添加快捷方式的权限 -->
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <!-- 删除桌面快捷的权限 -->
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- SDK2.1新增获取用户位置信息 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!-- 极光推送相关的权限 -->
+    <permission
+        android:name="com.example.lovestudy.activity.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.example.lovestudy.activity.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_UPDATES" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <application
+        android:name="com.example.lovestudy.base.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- 闪屏界面 -->
+        <activity
+            android:name="com.example.lovestudy.activity.SplashActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:theme="@style/SplashTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 主界面 -->
+        <activity
+            android:name="com.example.lovestudy.activity.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:theme="@style/NoTransparentTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 极光推送界面 -->
+        <activity android:name=".JpushShowActivity" >
+        </activity>
+
+        <!-- QQ登录相关的两个Activity -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent222222" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 加载界面 -->
+        <activity android:name=".view.LoadingActivity" />
+        <!-- 遮罩界面 -->
+        <activity android:name=".view.MaskActivity" />
+        <!-- 广告界面 -->
+        <activity android:name=".view.AdviewActivity" />
+        <!-- 内嵌浏览器界面 -->
+        <activity android:name=".view.BrowserActivity" />
+        <!-- 列表套单选框界面 -->
+        <activity android:name=".view.CheckBoxListViewActivity" />
+        <!-- 开关切换界面 -->
+        <activity android:name=".view.SwitchViewActivity" />
+        <!-- 自定义下划线TextView界面 -->
+        <activity android:name=".view.CircleProgressBarActivity" />
+        <!-- 自定义TextView界面 -->
+        <activity android:name=".view.CustomTextViewActivity" />
+        <!-- 自定义EditText界面 -->
+        <activity android:name=".view.CustomEditTextActivity" />
+        <!-- 自定义ViewPage滑动线条界面 -->
+        <activity android:name=".view.ViewPageCursorActivity" />
+        <!-- 自定义下划线TextView界面 -->
+        <activity android:name=".view.LineTextViewActivity" />
+        <!-- 自定义雷达扫描界面 -->
+        <activity android:name=".view.CustomRadarScanActivity" />
+        <!-- 自定义画布界面 -->
+        <activity android:name=".view.DrawBoardActivity" />
+
+        <!-- 系统设置界面 -->
+        <activity
+            android:name=".function.SystemSettingActivity"
+            android:configChanges="orientation|keyboardHidden" />
+        <!-- 图片管理界面 -->
+        <activity android:name=".function.ImgManageActivity" />
+        <!-- 异步加载图片界面 -->
+        <activity android:name=".function.AsynchLoadImgActivity" />
+        <!-- 图片缓存界面 -->
+        <activity android:name=".function.ImgCacheActivity" />
+        <!-- 图片裁剪界面 -->
+        <activity android:name=".function.ImgZoomActivity" />
+        <!-- 图片放大缩小拖拽界面 -->
+        <activity android:name=".function.ImgDragDropActivity" />
+        <!-- 圆形图片界面 -->
+        <activity android:name=".function.ImgCircularActivity" />
+        <!-- 圆角图片界面 -->
+        <activity android:name=".function.ImgRoundCornerActivity" />
+        <!-- 封面流界面 -->
+        <activity android:name=".function.ImgCoverFlowActivity" />
+        <!-- 异步加载图片(Handler机制)界面 -->
+        <activity android:name=".function.AsynchLoadHandlerActivity" />
+        <!-- 异步加载图片(异步任务)界面 -->
+        <activity android:name=".function.AsynchLoadAsyncTaskActivity" />
+        <!-- 异步加载图片(线程池)界面 -->
+        <activity android:name=".function.AsynchLoadExecutorServiceActivity" />
+        <!-- 字体设置界面 -->
+        <activity android:name=".function.FontSetActivity" />
+        <!-- Java与JS交互界面 -->
+        <activity android:name=".function.WebJavaInteractionActivity" />
+        <!-- WIFI管理界面 -->
+        <activity android:name=".function.WifiManageActivity" />
+        <!-- 数据存储界面 -->
+        <activity android:name=".function.DataStoreActivity" />
+        <!-- 共享参数存储数据界面 -->
+        <activity android:name=".function.DataStoreSharedPreferenceActivity" />
+        <!-- 文件存储数据界面 -->
+        <activity android:name=".function.DataStoreFileActivity" />
+        <!-- 数据库存储数据界面 -->
+        <activity android:name=".function.DataStoreDatabaseActivity" />
+        <!-- 数据分享界面 -->
+        <activity android:name=".function.ShareActivity" />
+        <!-- 闪图播放界面 -->
+        <activity android:name=".function.ShowGifActivity" />
+        <!-- 音乐播放界面 -->
+        <activity android:name=".function.MusicActivity" />
+        <!-- 视频播放界面 -->
+        <activity
+            android:name=".function.MoviePlayActivity"
+            android:theme="@style/NoTransparentTheme" />
+        <!-- 视频文件选择界面 -->
+        <activity android:name=".function.MovieChooseActivity" />
+        <!-- 通知界面 -->
+        <activity android:name=".function.NotifyActivity" />
+        <!-- 通讯界面 -->
+        <activity android:name=".function.CommunicationActivity" />
+        <!-- 获取手机联系人界面 -->
+        <activity android:name=".function.CommunicationGetLinkmanActivity" />
+        <!-- 获取手机短信界面 -->
+        <activity android:name=".function.CommunicationGetSMSActivity" />
+        <!-- 发送手机短信界面 -->
+        <activity android:name=".function.CommunicationSendSMSActivity" />
+        <!-- MD5加密界面 -->
+        <activity android:name=".function.MD5EncryptActivity" />
+        <!-- 二维码界面 -->
+        <activity android:name=".function.QrCodeActivity" />
+        <!-- 扫一扫界面 -->
+        <activity android:name=".function.SweepActivity" />
+        <!-- 手电筒界面 -->
+        <activity android:name=".function.FlashLightActivity" />
+        <!-- 护目镜界面 -->
+        <activity android:name=".function.BrightNessActivity" />
+        <!-- 悬浮窗界面 -->
+        <activity android:name=".function.FloatingWindowActivity" />
+        <!-- 颜色选择器界面 -->
+        <activity android:name=".function.ColorPickerActivity" />
+        <!-- 锁屏界面 -->
+        <activity android:name=".function.LockScreenActivity" />
+        <!-- 回调函数界面 -->
+        <activity android:name=".function.CallbackFunctionActivity" />
+        <!-- 添加桌面快捷界面 -->
+        <activity android:name=".function.DesktopShortcutActivity" />
+        <!-- 动画界面 -->
+        <activity android:name=".function.AnimationActivity" />
+        <!-- 背景色渐变界面 -->
+        <activity android:name=".function.BackgroundGradientActivity" />
+        <!-- 闹铃界面 -->
+        <activity android:name=".function.AlarmActivity" />
+        <!-- 振动管理界面 -->
+        <activity android:name=".function.VibrationManagerActivity" />
+
+        <!-- ButtonWidget界面 -->
+        <activity android:name=".widget.ButtonWidgetActivity" />
+        <!-- TextViewWidget界面 -->
+        <activity android:name=".widget.TextViewWidgetActivity" />
+        <!-- EditTextWidget界面 -->
+        <activity android:name=".widget.EditTextWidgetActivity" />
+        <!-- FragmentWidget界面 -->
+        <activity android:name=".widget.FragmentWidgetActivity" />
+        <!-- ViewPagerWidget界面 -->
+        <activity android:name=".widget.ViewPagerWidgetActivity" />
+        <!-- ListViewWidget界面 -->
+        <activity android:name=".widget.ListViewWidgetActivity" />
+        <!-- GridViewWidget界面 -->
+        <activity android:name=".widget.GridViewWidgetActivity" />
+        <!-- GalleryWidget界面 -->
+        <activity android:name=".widget.GalleryWidgetActivity" />
+        <!-- ProgressWidget界面 -->
+        <activity android:name=".widget.ProgressWidgetActivity" />
+        <!-- DatePickerWidget界面 -->
+        <activity android:name=".widget.DatePickerWidgetActivity" />
+        <!-- TimePickerWidget界面 -->
+        <activity android:name=".widget.TimePickerWidgetActivity" />
+        <!-- SpinnerWidget界面 -->
+        <activity android:name=".widget.SpinnerWidgetActivity" />
+
+        <!-- 更多界面 -->
+        <activity android:name=".user.MoreActivity" />
+        <!-- 设置界面 -->
+        <activity android:name=".user.SettingActivity" />
+        <!-- 关于界面 -->
+        <activity android:name=".user.AboutActivity" />
+        <!-- 引导界面 -->
+        <activity android:name=".user.GuideActivity" />
+        <!-- 帮助界面 -->
+        <activity android:name=".user.HelpActivity" />
+        <!-- 登录界面 -->
+        <activity android:name=".user.LoginActivity" />
+        <!-- 注册界面 -->
+        <activity android:name=".user.RegisterActivity" />
+        <!-- 忘记密码界面 -->
+        <activity android:name=".user.ForgetPasswordActivity" />
+        <!-- 个人资料界面 -->
+        <activity android:name=".user.PersonalDataActivity" />
+        <!-- 昵称界面 -->
+        <activity android:name=".user.NickNameActivity" />
+        <!-- 头像界面 -->
+        <activity android:name=".user.HeadPortraitActivity" />
+        <!-- 生活界面 -->
+        <activity android:name=".user.LifeActivity" />
+        <!-- 研究界面 -->
+        <activity android:name=".user.ResearchActivity" />
+        <!-- 娱乐界面 -->
+        <activity android:name=".user.EntertainmentActivity" />
+        <!-- 学习界面 -->
+        <activity android:name=".user.LearnActivity" />
+        <!-- 工作界面 -->
+        <activity android:name=".user.WorkActivity" />
+        <!-- 交友界面 -->
+        <activity android:name=".user.DatingActivity" />
+        <!-- 汽车标志界面 -->
+        <activity android:name=".user.CarMaskActivity" />
+        <!-- 中国城市界面 -->
+        <activity android:name=".user.ChinaCityActivity" />
+        <!-- 中国节气界面 -->
+        <activity android:name=".user.SolarTermsActivity" />
+        <!-- 中国节气详情页界面 -->
+        <activity android:name=".user.SolarTermsDetailsActivity" />
+        <!-- 生活衣物界面 -->
+        <activity android:name=".user.LifeClothActivity" />
+        <!-- 生活食物界面 -->
+        <activity android:name=".user.LifeFoodActivity" />
+        <!-- 生活居住界面 -->
+        <activity android:name=".user.LifeLiveActivity" />
+        <!-- 生活交通界面 -->
+        <activity android:name=".user.LifeTrafficActivity" />
+        <!-- 广播界面 -->
+        <activity android:name=".user.BroadCastActivity" />
+        <!-- 服务界面 -->
+        <activity android:name=".user.ServiceActivity" />
+        <!-- 播放音乐界面 -->
+        <activity android:name=".user.PlayMusicActivity" />
+        <!-- 进程间通信界面 -->
+        <activity android:name=".user.ProcessCommunicationActivity" />
+        <!-- 新进程界面 -->
+        <activity
+            android:name=".user.NewProcessActivity"
+            android:process=":Next" />
+        <!-- 改变文字颜色界面 -->
+        <activity android:name=".user.ChangeTxtColorActivity" />
+        <!-- 接口回调界面 -->
+        <activity android:name=".user.InterfaceCallBackActivity" />
+        <!-- 接口回调下载数据界面 -->
+        <activity android:name=".user.InterfaceCallBackDownloadDataActivity" />
+        <!-- 接口回调显示对话框界面 -->
+        <activity android:name=".user.InterfaceCallBackDisplayDialogActivity" />
+        <!-- 应用数据清除界面 -->
+        <activity android:name=".user.DataCleanManagerActivity" />
+        <!-- 数据库界面 -->
+        <activity android:name=".user.DatabaseActivity" />
+        <!-- 数据库事务优化界面 -->
+        <activity android:name=".user.DatabaseTransactionOptimizeActivity" />
+        <!-- 怎样办理护照界面 -->
+        <activity android:name=".user.HandlePassportActivity" />
+        <!-- 动态广播界面 -->
+        <activity android:name=".user.BroadCastStaticActivity" />
+        <!-- 静态广播界面 -->
+        <activity android:name=".user.BroadCastDynamicActivity" />
+        <!-- "常吃5种食物,最能预防胃癌"界面 -->
+        <activity android:name=".user.LifeFoodOneActivity" />
+        <!-- 学习文档界面 -->
+        <activity android:name=".user.LearnDocumentActivity" />
+        <!-- SQLite语法界面 -->
+        <activity android:name=".user.SQLiteGrammarActivity" />
+
+        <!-- 悬浮窗服务 -->
+        <service android:name="com.example.lovestudy.service.FloatingWindowService" />
+        <!-- 音乐播放服务 -->
+        <service android:name="com.example.lovestudy.service.PlayMusicService" />
+
+        <!-- 下面是极光推送相关的配置 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true" >
+            <intent-filter android:priority="1000" >
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
+
+                <category android:name="com.example.lovestudy.activity" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.example.lovestudy.activity" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" />
+        <receiver
+            android:name="com.example.lovestudy.broadcastreceiver.JPushCustomReceiver"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <action android:name="cn.jpush.android.intent.UNREGISTRATION" />
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+                <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" />
+                <action android:name="cn.jpush.android.intent.CONNECTION" />
+
+                <category android:name="com.example.lovestudy.activity" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="32524d36d25b0ffda40087b8" />
+
+        <!-- 注册一个闹铃的广播 -->
+        <receiver android:name="com.example.lovestudy.broadcastreceiver.AlarmReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.ALARM_RECEIVER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <!-- 注册一个静态的广播（测试用） -->
+        <receiver android:name="com.example.lovestudy.broadcastreceiver.StaticBroadCastReceiver" >
+            <intent-filter>
+                <action android:name="com.example.lovestudy.activity.user.BroadCastStatic" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

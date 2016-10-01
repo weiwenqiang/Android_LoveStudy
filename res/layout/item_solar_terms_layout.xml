@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white_btn_selector"
+    android:orientation="vertical" >
+
+    <com.example.lovestudy.base.BaseImageView
+        android:id="@+id/img_solar_terms"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/length_180"
+        android:layout_weight="1"
+        android:padding="1dp"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/txt_solar_terms"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/length_40"
+        android:gravity="center"
+        android:padding="1dp" />
+
+</LinearLayout>

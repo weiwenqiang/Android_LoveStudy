@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutBaseTheme" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/layout_title" />
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/timeTxt"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/length_45"
+        android:background="@drawable/white_button_selector_stroke_1px"
+        android:gravity="center"
+        android:text="当前时间" />
+
+</LinearLayout>

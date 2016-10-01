@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/lin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#f6f6f6"
+        android:orientation="vertical" >
+
+        <View
+            android:id="@+id/topmargin"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/length_20"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/length_17"
+            android:layout_marginLeft="@dimen/length_20"
+            android:layout_marginRight="@dimen/length_20"
+            android:layout_marginTop="@dimen/length_20"
+            android:singleLine="false"
+            android:textColor="#333333"
+            android:textSize="@dimen/length_18"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/length_20"
+            android:layout_marginRight="@dimen/length_20"
+            android:maxHeight="@dimen/length_250"
+            android:scrollbars="vertical"
+            android:textColor="#707070"
+            android:textSize="@dimen/length_14"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/max"
+            android:layout_alignTop="@+id/max"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:listSelector="@android:color/transparent"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/custom_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/length_1"
+            android:layout_marginTop="@dimen/length_14"
+            android:background="#dcdcdc"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/sureOrNeutralLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/length_20"
+            android:layout_marginRight="@dimen/length_20"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/sure"
+                style="@style/red_btn_style"
+                android:layout_marginBottom="@dimen/length_10"
+                android:layout_marginTop="@dimen/length_14"
+                android:layout_weight="1"
+                android:text="@string/sure"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/Neutral"
+                style="@style/white_btn_style"
+                android:layout_marginBottom="@dimen/length_10"
+                android:layout_marginLeft="@dimen/length_10"
+                android:layout_marginTop="@dimen/length_14"
+                android:layout_weight="1"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/cancel"
+                style="@style/white_btn_style"
+                android:layout_marginBottom="@dimen/length_10"
+                android:layout_marginLeft="@dimen/length_10"
+                android:layout_marginTop="@dimen/length_14"
+                android:layout_weight="1"
+                android:text="@string/cancel"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

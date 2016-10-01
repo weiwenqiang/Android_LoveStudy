@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutBaseTheme" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/layout_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/length_10" >
+
+        <TextView
+            android:id="@+id/txt_handle_passport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_button_selector_stroke_1px"
+            android:gravity="center|left"
+            android:padding="@dimen/length_2"
+            android:textSize="@dimen/length_17" />
+    </ScrollView>
+
+</LinearLayout>

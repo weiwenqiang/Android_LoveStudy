@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/StatusBarColor" >
+
+        <ImageView
+            android:id="@+id/browser_back"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_selector_pressed_false_statusbarcolor_true_33000000_btnback"
+            android:src="@drawable/icon_left"
+            android:padding="10dp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/browser_title"
+            style="@style/TitleTheme"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/browser_refresh"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_selector_pressed_false_statusbarcolor_true_33000000_btnback"
+            android:padding="10dp"
+            android:src="@drawable/icon_refresh"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <SeekBar
+        android:id="@+id/browser_progress"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#81878989"
+        android:visibility="visible" >
+    </SeekBar>
+
+    <WebView
+        android:id="@+id/browser_webview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="visible" >
+    </WebView>
+
+</LinearLayout>
